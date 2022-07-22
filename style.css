@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* a {
+    color: #ffffff;
+    text-decoration: none;
+} */
+header {
+    /* background-color: limegreen; */
+    /*min-height: 100px;*/ /*The min-height property defines the minimum height of an element.*/
+    /*If the content is larger than the minimum height, the min-height property has no effect.*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /*item is some stuff and content refers to group of stuff*/
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ffffff;
+}
+
+.container {
+    width: 1024px;
+    min-height: 300px;
+    margin-left: auto;
+    margin: auto;
+}
+
+main {
+    /* background-color: coral; */
+    min-height: 300px;
+    align-items: center;
+}
+
+.cards {
+    /* background-color: greenyellow; */
+    /* min-height: 300px; height comes from content */
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.cards1 {
+    /* background-color: rgb(228, 56, 170); */
+    background-image: url(images/image-background-card1.jpg);
+    background-size: cover; 
+    /* Contain - Resize the background image to make sure the image is fully visible	 */
+    /* Cover - Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges */
+    min-height: 250px;
+    width: 30%;
+    /* background-repeat: no-repeat; */
+    background-position: bottom;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+}
+
+.cards2 {
+    /* background-color: rgb(126, 16, 89); */
+    background-image: url(images/image-background-card2.jpg);
+    background-size: cover;
+    min-height: 250px;
+    width: 30%;
+    background-position: bottom;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+}
+
+.cards3 {
+    /* background-color: rgb(184, 88, 152); */
+    background-image: url(images/image-background-card3.jpg);
+    background-size: cover;
+    min-height: 250px;
+    width: 30%;
+    background-position: bottom;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+}
+
+.herobox1 {
+    /* width: 50%; */
+    flex: 2;
+    /* background-color: rgb(114, 201, 223); */
+    padding-right: 100px;
+}
+
+.herobox2 {
+    /* width: 50%; */
+    flex: 1;
+    /* background-color: rgba(255, 255, 255, 0.432); */
+}
+
+main {
+    display: flex;
+}
+
+body {
+    /* background-color: #FC5E55; */
+    /* https://www.w3schools.com/css/css3_gradients.asp */
+    /* background-repeat: no-repeat; */
+    /*following to commands are for all h1 and p. It is a default/generic command*/
+    /* font-family: Arial, Helvetica, sans-serif; */
+    color: #ffffff;
+    /*Google Font*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.125rem;
+    background-image: url(images/image-lion-background.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+nav {
+    display: flex;
+}
+
+html {
+    /*height: 100%;*/ /*This is really helpful*/
+    background-image: linear-gradient(#FC5E55, #FA4083); /*90deg == to right*/ /*-90deg == to left*/
+}
+
+h1 {
+    font-size: 3.25rem;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1rem;
+}
+
+p {
+    line-height: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    margin-top: 20px; /* Why I use px over rem coz I want to fix the margin-top of h2 so that even if font size change in chrome settings I not gonna change*/
+}
+
+.cards p {
+    font-size: 0.85rem;
+    line-height: 1.25rem;
+    /*The line-height property specifies the height of a line.
+    Note: Negative values are not allowed.*/
+    margin: 10px 30px 20px 30px;
+}
+
+.cards i {
+    font-size: 100px;
+    padding-top: 30px;
+}
+
+.cards a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.mybutton {
+    text-decoration: none;
+    color: #FA4083;
+    background-color: #ffffff;
+    padding: 11px 25px;
+    font-size: 1.20rem;
+    border: none;
+    border-radius: 2px; /*Shorthand is top-left top-right bottom-right bottom-left*/
+    font-family: 'Playfair Display', serif;
+    margin-top: 10px;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.062);
+    /*       right bottom color and opacity*/
+}
+
+.mybutton {
+    display: inline-block;
+    /*inline- Displays an element as an inline element (like <span>). Any height and width properties will have no effect	
+
+    inline-block- Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values
+
+    block- Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width*/
+    margin-top: 20px;
+}
+
+nav .mybutton {
+    margin-left: 20px;
+}
+
+.mybutton:hover {
+    background-color: rgb(157, 255, 170);
+    transition-duration: 1s;
+}
+
+.navbutton {
+    /* color: #ffffff; */
+    /* text-decoration: none; */
+    border: 1px solid #ffffff;
+    font-family: 'Playfair Display', serif;
+    padding: 11px 25px;
+    margin-left: 4px;
+    display: inline-block;
+    position: relative;
+}
+
+.navbutton a {
+    text-decoration: none;
+    color: #ffffff;
+}
+/* hr {
+    color: #ffffff;
+} */
+
+.tbox {
+    width: 47%;
+    padding: 50px;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    /*https://www.w3schools.com/cssref/playdemo.asp?filename=playcss_box-sizing*/
+    margin-top: 50px;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.tbox p:last-of-type {
+    padding-left: 30px;
+    font-size: 0.8rem;
+    /*https://css-tricks.com/pseudo-class-selectors/*/
+}
+
+.dropdown-box {
+    display: none;
+    position: absolute;
+    /* fixed: The element is positioned relative to the browser window
+    absolute: The element is positioned relative to its first positioned (not static) ancestor element
+    relative: The element is positioned relative to its normal position
+    https://www.w3schools.com/cssref/playit.asp?filename=playcss_position&preval=absolute
+    initial: Sets this property to its default value */
+    padding-top: 20px;
+    z-index: 1;
+    text-align: center;
+}
+
+.navbutton:hover .dropdown-box {
+    display: block;
+}
+
+.dropdown-box .navbutton {
+    width: 150px;
+    background-color: #ffffff;
+    margin-left: -27px;
+}
+
+.dropdown-box a.navbutton {  /* this is really tricky*/
+    color: #FA4083;
+}
+
+.main2 {
+    min-height: 300px;
+    padding-top: 50px;
+}
+
+.inputwrapper {
+    margin-bottom: 20px;
+}
+
+input[type=text], input[type=email], textarea {
+    padding: 10px 15px;
+    width: 40%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.85rem;
+    width: 100%;
+}
+
+.newline {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.for-spacing {
+    margin-left: 20px;
+}
+
+input[type=radio] {
+    margin-right: 10px;
+}
+
+input[type=submit] {
+    background-color: #ffffff;
+    color: #FC5E55;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+form {
+    margin: 40px 0px;
+}
